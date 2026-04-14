@@ -1,0 +1,32 @@
+=== DATA UNDERSTANDING ===
+
+Rows: 1000, Columns: ['User_ID', 'App', 'Daily_Minutes_Spent', 'Posts_Per_Day', 'Likes_Per_Day', 'Follows_Per_Day']
+
+Missing per column:
+User_ID                0
+App                    0
+Daily_Minutes_Spent    0
+Posts_Per_Day          0
+Likes_Per_Day          0
+Follows_Per_Day        0
+
+Dtypes:
+User_ID                object
+App                    object
+Daily_Minutes_Spent     int64
+Posts_Per_Day           int64
+Likes_Per_Day           int64
+Follows_Per_Day         int64
+
+No missing values in numeric features.
+
+Capped numeric outliers (Tukey IQR 1.5). Rows flagged: 0.
+
+
+=== EDA ===
+Highest avg daily minutes: Instagram (264.1 min).
+
+
+=== CORRELATIONS ===
+Time spent vs Likes (Pearson): 0.014
+Posts vs Follows gained: 0.018
